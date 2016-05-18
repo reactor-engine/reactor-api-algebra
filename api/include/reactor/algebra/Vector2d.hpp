@@ -1,12 +1,12 @@
 #ifndef REACTOR_ALGEBRA_VECTOR2D_HPP
 #define REACTOR_ALGEBRA_VECTOR2D_HPP
 
-#include "reactor/type/types.hpp"
+#include "reactor/common/type/types.hpp"
 #include "reactor/algebra/Vector2dInside.hpp"
 
 namespace reactor { namespace algebra {
 
-using namespace reactor::type;
+using namespace reactor::common::type;
 
 template <typename TScalar>
 class Vector2d: protected Vector2dInside<TScalar> {
@@ -77,7 +77,7 @@ public:
     TScalar lengthSq() const;
     TScalar maxLength() const;
     TScalar distanceTo(const Vector2d<TScalar>& p) const;
-    TScalar distanceToSq(const Vector2d<TScalar>& p) const;
+    TScalar distanceSqTo(const Vector2d<TScalar>& p) const;
 
     Vector2d<TScalar> ort() const;
     Vector2d<TScalar>& normalize();

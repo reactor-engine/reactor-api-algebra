@@ -7,7 +7,6 @@ set(SOURCE_FILES
         )
 
 include_directories(
-        ../reactor-api-type/api/include)
+        ../reactor-api-common/api/include)
 
 #add_executable(reactor_api_algebra ${SOURCE_FILES})
-#set_target_properties(reactor_api_algebra PROPERTIES LINKER_LANGUAGE CXX)
